@@ -1,5 +1,18 @@
-# thingsboard_XSS
+# ThingsBoard Stored & Reflected XSS in Notification Center
 
+## Overview
+A **Cross-Site Scripting (XSS)** vulnerability (both Stored and Reflected) has been discovered in **ThingsBoard**. The vulnerability exists within the **Notification Center** component, allowing authenticated users (including standard/customer accounts) to execute arbitrary JavaScript payloads.
+
+---
+
+## Vulnerability Details
+- **Vulnerability Type:** Cross-Site Scripting (XSS) - Stored & Reflected
+- **Component:** Notification Center (`/notification` or notification creation / bell icon module)
+- **Affected Product:** ThingsBoard (Community / Professional Edition)
+- **Attack Vector:** Network (Authenticated)
+- **Impact:** Execution of arbitrary script code in the victim's browser session, affecting both administrator and customer accounts.
+
+## PoC
 1. click Send Notification in Notification center
 <img width="1919" height="969" alt="1__Send Notification" src="https://github.com/user-attachments/assets/280ee1bf-b60d-4ef9-9a70-fc3859260c88" />
 
